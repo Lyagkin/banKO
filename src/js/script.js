@@ -69,8 +69,6 @@ tabsContainer.addEventListener('click', function (e) {
 
   clicked.classList.add('operations__tab-active'); // добавление табу на который кликнули смещения по оси Y через добавление класса активности
 
-  console.log(clicked);
-
   document.querySelector(`.operations__content-${clicked.dataset.tab}`).classList.add('operations__content-active'); // получение активного контента по значению из data атрибута активного таба (от 1 до 3) и показ этого контента через добавление класса активности
 });
 
